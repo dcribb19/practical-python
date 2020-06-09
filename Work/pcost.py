@@ -10,7 +10,7 @@ def portfolio_cost(filename):
     total_cost = 0
     portfolio = read_portfolio(filename)
     for s in portfolio:
-        total_cost += s.price * s.shares
+        total_cost += s.cost
     print('Total cost:', round(total_cost, 2))
 
 
